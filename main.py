@@ -43,3 +43,27 @@ r2 = r2_score(y_test, y_pred)
 print(f"Mean Squared Error: {mse:.2f}")
 print(f"R² Score: {r2:.2f}")
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plot: predicted vs actual prices
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x=y_test, y=y_pred)
+plt.xlabel("Actual Prices")
+plt.ylabel("Predicted Prices")
+plt.title("Actual vs Predicted Prices")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# Optional: plot residuals (errors)
+residuals = y_test - y_pred
+plt.figure(figsize=(8, 6))
+sns.histplot(residuals, kde=True)
+plt.title("Distribution of Prediction Errors (Residuals)")
+plt.xlabel("Error")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
