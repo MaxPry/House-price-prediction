@@ -46,14 +46,20 @@ print(f"R² Score: {r2:.2f}")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Plot: predicted vs actual prices
+# Make predictions on the test set
+predictions = model.predict(X_test)
+
+# Plotting Actual vs Predicted Prices
 plt.figure(figsize=(8, 6))
-sns.scatterplot(x=y_test, y=y_pred)
-plt.xlabel("Actual Prices")
-plt.ylabel("Predicted Prices")
-plt.title("Actual vs Predicted Prices")
-plt.grid(True)
-plt.tight_layout()
+plt.scatter(y_test, predictions, color='blue', label='Predictions')
+
+# Adding the y = x line (Ideal prediction line)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--', label='Ideal Prediction (y = x)')
+
+plt.title('Actual vs Predicted Prices')
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.legend()
 plt.show()
 
 # Optional: plot residuals (errors)
