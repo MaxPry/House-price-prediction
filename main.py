@@ -83,4 +83,28 @@ model.fit(X_train, y_train)
 # Save the trained model
 joblib.dump(model, 'model.pkl')
 
+# Plot Feature Importance
+import numpy as np
+
+# Get feature names and their corresponding coefficients
+feature_names = X.columns
+coefficients = model.coef_
+
+# Sort features by importance
+sorted_indices = np.argsort(coefficients)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(
+    x=coefficients[sorted_indices],
+    y=feature_names[sorted_indices]
+)
+plt.title("Feature Importance")
+plt.xlabel("Coefficient Value")
+plt.ylabel("Feature")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+
 
