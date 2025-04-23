@@ -72,4 +72,15 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+import joblib
+
+# Train the Linear Regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Save the trained model
+joblib.dump(model, 'model.pkl')
+
 
