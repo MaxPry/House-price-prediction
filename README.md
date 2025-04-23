@@ -46,6 +46,9 @@ The blue dots represent predictions, and the red dashed line represents perfect 
 
 The second plot represents the distribution of residuals (errors), which helps us assess how well the model is performing.
 
+## Model Saving
+After training, the linear regression model is saved as model.pkl using joblib. This allows you to reuse the trained model without retraining.
+
 # House Price Prediction
 
 ## Run the notebook on Google Colab
