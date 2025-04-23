@@ -1,2 +1,54 @@
-# House-price-prediction
-Simple linear regression project to predict house prices
+# House Price Prediction
+
+This project uses machine learning to predict house prices based on various features like the number of rooms, location, and more. We used the California Housing dataset and trained a Linear Regression model to make price predictions.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Visualizations](#visualizations)
+- [License](#license)
+
+## Installation
+
+1. Clone this repository to your local machine:
+   
+   git clone https://github.com/MaxPry/House-price-prediction.git
+   
+2. Install the required libraries:
+
+   pip install -r requirements.txt
+   Note: If you don't have requirements.txt, you can manually install dependencies:
+   pip install scikit-learn pandas matplotlib seaborn
+
+## Usage
+Open the House-price-prediction.ipynb notebook in Google Colab.
+
+Run the cells to load the data, train the model, and visualize the results.
+
+Alternatively, you can run the Python script main.py locally: python main.py
+
+## Results
+The model was trained using Linear Regression, and here are the evaluation results:
+
+Mean Squared Error (MSE): 0.56
+R² Score: 0.58
+
+These results indicate a moderate correlation between predicted and actual house prices.
+
+Visualizations
+Actual vs Predicted Prices
+
+Residuals Distribution
+
+The first plot shows the comparison between the actual and predicted house prices. The second plot represents the distribution of residuals (errors), which helps us assess how well the model is performing.
+
+# House Price Prediction
+
+## Run the notebook on Google Colab
+
+[Open the notebook in Google Colab] https://colab.research.google.com/drive/11oPrBhSmcu_bX5ygD9zA5CdugzhvSd74?usp=sharing
+
+
+
+   
