@@ -36,12 +36,15 @@ R² Score: 0.58
 
 These results indicate a moderate correlation between predicted and actual house prices.
 
-Visualizations
+## Visualizations
 Actual vs Predicted Prices
 
 Residuals Distribution
 
-The first plot shows the comparison between the actual and predicted house prices. The second plot represents the distribution of residuals (errors), which helps us assess how well the model is performing.
+This first scatter plot shows how close the model's predictions are to the actual house prices.
+The blue dots represent predictions, and the red dashed line represents perfect predictions (where predicted = actual)
+
+The second plot represents the distribution of residuals (errors), which helps us assess how well the model is performing.
 
 # House Price Prediction
 
