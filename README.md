@@ -9,8 +9,7 @@ This project uses machine learning to predict house prices based on various feat
 - [Visualizations](#visualizations)
 - [License](#license)
 
-## Installation
-
+## 🛠️ Installation
 1. Clone this repository to your local machine:
    
    git clone https://github.com/MaxPry/House-price-prediction.git
@@ -20,6 +19,8 @@ This project uses machine learning to predict house prices based on various feat
    pip install -r requirements.txt
    Note: If you don't have requirements.txt, you can manually install dependencies:
    pip install scikit-learn pandas matplotlib seaborn
+   
+3. Run the project: python main.py
 
 ## Usage
 Open the House-price-prediction.ipynb notebook in Google Colab.
@@ -37,25 +38,20 @@ R² Score: 0.58
 These results indicate a moderate correlation between predicted and actual house prices.
 
 ## Visualizations
-Actual vs Predicted Prices
-
-Residuals Distribution
-
-This first scatter plot shows how close the model's predictions are to the actual house prices.
+This first scatter plot - Actual vs Predicted Prices 
+Shows how close the model's predictions are to the actual house prices.
 The blue dots represent predictions, and the red dashed line represents perfect predictions (where predicted = actual)
 
-The second plot represents the distribution of residuals (errors), which helps us assess how well the model is performing.
+The second plot - Distribution of Prediction Errors (Residuals) 
+Represents the distribution of residuals (errors), which helps us assess how well the model is performing.
 
 The  third plot - Feature Importance
-after training, we analyzed which features had the most impact on the predicted house price. This is visualized using the model’s learned coefficients
+After training, we analyzed which features had the most impact on the predicted house price. This is visualized using the model’s learned coefficients
 
 ## Model Saving
 After training, the linear regression model is saved as model.pkl using joblib. This allows you to reuse the trained model without retraining.
 
-# House Price Prediction
-
 ## Run the notebook on Google Colab
-
 [Open the notebook in Google Colab] https://colab.research.google.com/drive/11oPrBhSmcu_bX5ygD9zA5CdugzhvSd74?usp=sharing
 
 
